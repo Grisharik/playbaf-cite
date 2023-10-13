@@ -3,24 +3,72 @@
 <head>
   <title>PlayBAF</title>
       <style>
+     body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: #f0f0f0;
+      color: #333;
+    }
+
     .main-box {
-      border-radius: 10px; /* Добавлено: скругление углов */
-      background-color: blue; /* Добавлено: синий цвет */
-      display: inline-block; /* Добавлено: чтобы кнопка и текст были рядом */
-      padding: 10px; /* Добавлено: отступы внутри блока */
+      border-radius: 10px;
+      background-color: #3498db;
+      display: inline-block;
+      padding: 20px;
+      margin: 20px;
+      color: white;
+      text-align: center;
     }
 
     .main-box button {
-      margin-top: 10px; /* Добавлено: отступ от кнопки */
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 18px;
+      margin-right: 10px;
+    }
+
+    .main-box button:hover {
+      background-color: #2980b9;
+      color: white;
+      cursor: pointer;
     }
 
     .down-box {
-      height: 100vh; /* Добавлено: занимает всю высоту экрана */
-      background-color: gray; /* Добавлено: цвет фона */
+      height: 100vh;
+      background-color: #2ecc71;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 24px;
+      color: white;
     }
 
-    .panel .pbtn1 {
-      display: inline-block; /* Добавлено: чтобы кнопка была в одной строке с текстом */
+    .panel {
+      text-align: center;
+      margin: 20px;
+    }
+
+    .panel button {
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 18px;
+      margin: 0 10px;
+    }
+
+    .panel button.pbtn1 {
+      background-color: #e74c3c;
+      color: white;
+    }
+
+    .panel button:hover {
+      background-color: #c0392b;
+      color: white;
+      cursor: pointer;
     }
   </style>
 </head>
