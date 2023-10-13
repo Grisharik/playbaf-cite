@@ -1,11 +1,54 @@
-<DOCOTYPE HTML>
+<!DOCTYPE HTML>
 <html>
 <head>
-<title>PlayBAF</title>
+  <title>PlayBAF</title>
+      <style>
+    .main-box {
+      border-radius: 10px; /* Добавлено: скругление углов */
+      background-color: blue; /* Добавлено: синий цвет */
+      display: inline-block; /* Добавлено: чтобы кнопка и текст были рядом */
+      padding: 10px; /* Добавлено: отступы внутри блока */
+    }
 
+    .main-box button {
+      margin-top: 10px; /* Добавлено: отступ от кнопки */
+    }
 
+    .down-box {
+      height: 100vh; /* Добавлено: занимает всю высоту экрана */
+      background-color: gray; /* Добавлено: цвет фона */
+    }
+
+    .panel .pbtn1 {
+      display: inline-block; /* Добавлено: чтобы кнопка была в одной строке с текстом */
+    }
+  </style>
 </head>
-<body></body>
+<body>
+  <div class="main-box">
+    <button>Играть</button>
+    <p>
+      <a href="ссылка_на_дискорд">Ссылка на Discord</a><br>Начни играть на бесплатном, приватном дружеском сервере без читов! Тебе понадобится лишь голосовой чат и мод на эмоции, но если не хочешь, можешь не устанавливать. Верификация не требует голосового чата.
+    </p>
+  </div>
 
+  <div class="down-box">
+    <p>Представь место, где было бы комфортно играть с друзьями... Ничего представлять не надо! Просто начни играть на PlayBAF</p>
+  </div>
 
+  <div class="panel">
+    <button class="pbtn1">PlayBAF</button>
+    <button>Контакты</button>
+    <button>Дискорд</button>
+  </div>
+
+  <script>
+    // Добавим эффект параллакса для .down-box
+    window.addEventListener('scroll', function () {
+      const offset = window.scrollY;
+      const downBox = document.querySelector('.down-box');
+      downBox.style.transform = `translateY(${offset * 0.5}px)`;
+    });
+  </script>
+</body>
 </html>
